@@ -50,12 +50,12 @@ def main():
             print('Device #%d: %s' % (index, name))
         return
 
-    if not args.access_key:
-        print('--access_key is required.')
-        return
+    # if not args.access_key:
+    #     print('--access_key is required.')
+    #     return
 
     cheetah = create(
-        access_key=args.access_key,
+        access_key="ANZiDE0WDiyzsnRnXsQxBEvEUFdF51IgfV2aSw6xe3WhVWNPXiQ61w==",
         library_path=args.library_path,
         model_path=args.model_path,
         endpoint_duration_sec=args.endpoint_duration_sec,
@@ -100,4 +100,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
